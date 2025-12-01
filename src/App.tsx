@@ -36,11 +36,11 @@ const SLIDER_INDEXES = SLIDER_VALUES.map((_, index) => index);
 const deepLink =
   "alfabank://own_accounts_transfer?type=bank";
 
-const Redirect = () => {
-  window.location.href = deepLink;
-
-  return null;
-};
+// const Redirect = () => {
+//   window.location.href = deepLink;
+//
+//   return null;
+// };
 
 export const App = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -69,9 +69,9 @@ export const App = () => {
     });
   };
 
-  if (LS.getItem(LSKeys.ShowThx, false)) {
-    return <Redirect />;
-  }
+  // if (LS.getItem(LSKeys.ShowThx, false)) {
+  //   return <Redirect />;
+  // }
 
   return (
     <>
